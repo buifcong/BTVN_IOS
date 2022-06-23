@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="firstVC" customModule="data_lesson9" customModuleProvider="target">
+            <connections>
+                <outlet property="btLogin" destination="lMV-Tl-Jgl" id="fBY-re-9eh"/>
+                <outlet property="tfPassword" destination="XqO-6j-Dsr" id="hmT-t6-A5t"/>
+                <outlet property="tfUsername" destination="DEz-hc-u1U" id="Rnf-sT-gk1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="DEz-hc-u1U">
+                    <rect key="frame" x="30" y="194" width="330" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="RRh-a4-6bD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="XqO-6j-Dsr">
+                    <rect key="frame" x="30" y="284" width="330" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="5NS-ek-jiG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMV-Tl-Jgl">
+                    <rect key="frame" x="145" y="402" width="100" height="50"/>
+                    <color key="backgroundColor" red="0.61960786580000005" green="0.23921570180000001" blue="0.2117646933" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="4zp-5u-htw"/>
+                        <constraint firstAttribute="height" constant="50" id="XGB-6l-l5R"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Login">
+                                <attributes>
+                                    <font key="NSFont" size="19" name="Helvetica"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="tapOnLogin:" destination="-1" eventType="touchUpInside" id="9X0-Me-MEj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DEz-hc-u1U" secondAttribute="trailing" constant="30" id="1vs-9e-wR4"/>
+                <constraint firstItem="lMV-Tl-Jgl" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="7Ja-AI-eVL"/>
+                <constraint firstItem="DEz-hc-u1U" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="150" id="8Bd-nJ-Omb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XqO-6j-Dsr" secondAttribute="trailing" constant="30" id="Ea5-1A-AWd"/>
+                <constraint firstItem="XqO-6j-Dsr" firstAttribute="top" secondItem="DEz-hc-u1U" secondAttribute="bottom" constant="30" id="Qv3-Yd-YT1"/>
+                <constraint firstItem="DEz-hc-u1U" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="VvB-cO-aiE"/>
+                <constraint firstItem="XqO-6j-Dsr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="WNe-Kh-i06"/>
+                <constraint firstItem="lMV-Tl-Jgl" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="s6j-l2-bUr"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="76"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
