@@ -28,8 +28,10 @@ class ViewController: UIViewController {
     func bindData(){
         let b1 = Book(name: "Dế Mèn Phiêu Lưu Kí", author: "Tô Hoài", price: "12000")
         let b2 = Book(name: "English", author: "Công", price: "20000")
+        let b3 = Book(name: "Math and Chemistry", author: "Alex Edward", price: "32000")
         arrBook.append(b1)
         arrBook.append(b2)
+        arrBook.append(b3)
         tableView.reloadData()
         
     }
