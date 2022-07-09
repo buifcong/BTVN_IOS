@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC" customModule="autoLayout" customModuleProvider="target">
+            <connections>
+                <outlet property="btLogin" destination="iFG-FQ-7Hb" id="o89-p4-kiP"/>
+                <outlet property="tfEmail" destination="9jf-y1-v9B" id="lgz-my-RFB"/>
+                <outlet property="tfPass" destination="WtV-TF-V3W" id="Rdo-cv-yIb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="GqY-6B-FgD">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WtV-TF-V3W">
+                    <rect key="frame" x="45" y="598.5" width="934" height="173"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="WtV-TF-V3W" secondAttribute="height" multiplier="27:5" id="4za-aZ-708"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9jf-y1-v9B">
+                    <rect key="frame" x="45" y="380.5" width="934" height="173"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="9jf-y1-v9B" secondAttribute="height" multiplier="27:5" id="9AC-j1-Xdh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFG-FQ-7Hb">
+                    <rect key="frame" x="45" y="816.5" width="934" height="173"/>
+                    <color key="backgroundColor" red="0.70980393890000004" green="0.43137252329999998" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="iFG-FQ-7Hb" secondAttribute="height" multiplier="27:5" id="hRV-4j-1Zm"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Sign In">
+                                <attributes>
+                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </buttonConfiguration>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="WtV-TF-V3W" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="29a-qL-gfb"/>
+                <constraint firstItem="iFG-FQ-7Hb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="45" id="C1R-iY-xAP"/>
+                <constraint firstItem="9jf-y1-v9B" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="D6b-ZU-cJb"/>
+                <constraint firstItem="iFG-FQ-7Hb" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="GOH-f9-ohw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WtV-TF-V3W" secondAttribute="trailing" constant="45" id="LDI-gb-ldC"/>
+                <constraint firstItem="GqY-6B-FgD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="LLI-WK-QUg"/>
+                <constraint firstItem="WtV-TF-V3W" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="45" id="S2A-qv-b6Y"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iFG-FQ-7Hb" secondAttribute="trailing" constant="45" id="Xku-zs-waO"/>
+                <constraint firstItem="9jf-y1-v9B" firstAttribute="width" secondItem="WtV-TF-V3W" secondAttribute="width" id="Y3a-tB-3WP"/>
+                <constraint firstItem="iFG-FQ-7Hb" firstAttribute="top" secondItem="WtV-TF-V3W" secondAttribute="bottom" constant="45" id="cmf-gi-KVQ"/>
+                <constraint firstAttribute="bottom" secondItem="GqY-6B-FgD" secondAttribute="bottom" id="cx2-vH-Dnm"/>
+                <constraint firstItem="WtV-TF-V3W" firstAttribute="top" secondItem="9jf-y1-v9B" secondAttribute="bottom" constant="45" id="ddg-vD-gf3"/>
+                <constraint firstItem="GqY-6B-FgD" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="lT6-S1-y9U"/>
+                <constraint firstItem="WtV-TF-V3W" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="pbC-Wc-hP2"/>
+                <constraint firstItem="GqY-6B-FgD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rar-vl-ebt"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="75.669642857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img1" width="960" height="1440"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
