@@ -1,0 +1,6 @@
+framework module Pods_CallAPIItunes {
+  umbrella header "Pods-CallAPIItunes-umbrella.h"
+
+  export *
+  module * { export * }
+}
